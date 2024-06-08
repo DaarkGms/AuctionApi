@@ -7,7 +7,7 @@ app = Flask(__name__)
 # Initialize Firebase
 cred = credentials.Certificate('leilao-b2276-firebase-adminsdk-z44fo-c68b4dff41.json')
 firebase_admin.initialize_app(cred, {
-    'databaseURL': ''
+    'databaseURL': 'https://leilao-b2276-default-rtdb.firebaseio.com'
 })
 
 # Endpoint para cadastrar itens
